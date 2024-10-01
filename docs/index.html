@@ -4,9 +4,84 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Cursos de JavaScript</title>
+     <title>Práctica 1</title>
+     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>HOLA</body>
+<body>
+     <header>
+          <h1>Práctica 1 - Despliegue - Álvaro Garrido Campos</h1>
+     </header>
+
+     <main>
+          <section class="intro">
+               <h2>¿Qué es Git?</h2>
+               <p>Git es un sistema de control de versiones distribuido ampliamente utilizado en el desarrollo de
+                    software para rastrear y gestionar los cambios en el código fuente. Creado por Linus Torvalds en
+                    2005, Git permite a múltiples desarrolladores colaborar en un proyecto, trabajando en paralelo sin
+                    sobreescribir el trabajo de los demás. Sus principales ventajas incluyen:</p>
+               <ul>
+                    <li><strong>Versionado del código:</strong> Mantiene un historial detallado de cada cambio
+                         realizado, permitiendo a los desarrolladores volver a versiones anteriores en caso de errores.
+                    </li>
+                    <li><strong>Ramas:</strong> Git facilita la creación de ramas para desarrollar nuevas
+                         características, corregir errores o experimentar sin afectar el código principal.</li>
+                    <li><strong>Distribuido:</strong> Cada desarrollador tiene una copia completa del historial del
+                         proyecto, lo que permite trabajar de forma independiente sin depender de una conexión a
+                         internet constante.</li>
+               </ul>
+               <p>Git es esencial en el flujo de trabajo moderno de desarrollo de software porque ofrece flexibilidad,
+                    control y seguridad en la gestión de proyectos, independientemente de la escala.</p>
+          </section>
+
+          <section class="intro">
+               <h2>¿Qué es Git Flow?</h2>
+               <p>Git Flow es una metodología de ramificación basada en Git, diseñada para gestionar eficazmente el
+                    ciclo de vida de un proyecto de software. Fue propuesta por Vincent Driessen y define un conjunto de
+                    reglas y convenciones para el uso de ramas en Git, lo que facilita la organización y coordinación
+                    del trabajo entre desarrolladores.</p>
+               <p>Git Flow introduce cinco tipos principales de ramas:</p>
+               <ul>
+                    <li><strong>Master:</strong> Representa la versión estable y lista para producción del proyecto.
+                         Todos los lanzamientos o versiones finales del software se encuentran en esta rama.</li>
+                    <li><strong>Develop:</strong> Contiene la versión más reciente del código en desarrollo. Es la rama
+                         donde se combinan todas las características nuevas y correcciones de errores antes de
+                         lanzarlas.</li>
+                    <li><strong>Feature:</strong> Ramas temporales utilizadas para desarrollar nuevas características.
+                         Cada nueva funcionalidad se desarrolla en una rama feature, que se crea a partir de la rama
+                         develop y, una vez completada, se fusiona de nuevo en develop.</li>
+                    <li><strong>Release:</strong> Se utilizan para preparar una nueva versión para ser lanzada. Permiten
+                         realizar ajustes finales, corregir errores y preparar la versión para producción. Cuando está
+                         lista, se fusiona en master y develop.</li>
+                    <li><strong>Hotfix:</strong> Se usan para realizar correcciones urgentes sobre la versión en
+                         producción (rama master). Una vez corregido el error, los cambios se fusionan tanto en master
+                         como en develop.</li>
+               </ul>
+               <p>La metodología Git Flow es ideal para equipos que trabajan en proyectos de desarrollo colaborativo y a
+                    largo plazo. Estas son algunas de las principales razones por las que adoptamos Git Flow en nuestro
+                    proceso de desarrollo:</p>
+               <ul>
+                    <li><strong>Organización clara:</strong> Las ramas tienen un propósito bien definido (desarrollo,
+                         nuevas funcionalidades, lanzamientos, correcciones urgentes), lo que facilita la organización
+                         del trabajo en equipos y la comprensión del estado del proyecto.</li>
+                    <li><strong>Desarrollo paralelo:</strong> Permite que varios desarrolladores trabajen en diferentes
+                         características o correcciones de errores al mismo tiempo sin interferencias, gracias a las
+                         ramas feature y hotfix.</li>
+                    <li><strong>Control de versiones:</strong> Al separar el código en ramas develop y master, es más
+                         sencillo mantener un entorno estable para lanzamientos y evitar la introducción accidental de
+                         código en producción que aún no ha sido completamente probado.</li>
+                    <li><strong>Preparación de lanzamientos:</strong> Las ramas release permiten realizar ajustes y
+                         pruebas antes de lanzar una versión a producción, garantizando un código más estable y sin
+                         sorpresas en la versión final.</li>
+                    <li><strong>Soluciones rápidas:</strong> Las ramas hotfix permiten realizar correcciones críticas de
+                         manera rápida en el código en producción, sin interferir con el trabajo de desarrollo en curso.
+                    </li>
+               </ul>
+               <p>En resumen, Git Flow nos ayuda a mantener una estructura organizada y eficiente para el desarrollo de
+                    software, permitiendo un flujo de trabajo ágil, seguro y colaborativo, donde el código pasa por
+                    distintas fases antes de llegar a producción.</p>
+          </section>
+     </main>
+</body>
 
 </html>
