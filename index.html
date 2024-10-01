@@ -5,7 +5,80 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Cursos de JavaScript</title>
-     <link rel="stylesheet" href="css/main.css">
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          body {
+               font-family: Arial, sans-serif;
+               background-color: #f4f4f4;
+               min-height: 100vh;
+               display: flex;
+               flex-direction: column;
+          }
+
+          header {
+               text-align: center;
+               padding: 20px;
+               background-image: url('ruta/a/tu/imagen-de-fondo.png');
+               background-size: cover;
+               background-position: center;
+               color: #333;
+          }
+
+          h1 {
+               margin-bottom: 10px;
+          }
+
+          nav ul {
+               list-style-type: none;
+               display: flex;
+               justify-content: center;
+               border: 1px solid #000;
+               margin-top: 10px;
+          }
+
+          nav ul li {
+               margin: 0;
+               padding: 10px 20px;
+               border-left: 1px solid #000;
+               text-align: center;
+               width: 200px;
+          }
+
+          nav ul li:first-child {
+               border-left: none;
+          }
+
+          nav ul li a {
+               text-decoration: none;
+               color: #000;
+               font-weight: bold;
+          }
+
+          nav ul li:hover {
+               background-color: #ccc;
+          }
+
+          main {
+               flex: 1;
+               padding: 50px;
+          }
+
+          footer {
+               text-align: center;
+               padding: 10px;
+               background-color: #333;
+               color: #fff;
+               position: relative;
+               bottom: 0;
+               width: 100%;
+               left: 0;
+          }
+     </style>
 </head>
 
 <body>
@@ -14,8 +87,9 @@
           <nav>
                <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li>Contenido HTML</li>
-                    <li>Atributos HTML</li>
+                    <li>Modificar contenido HTML</li>
+                    <li>Modificar estilos CSS</li>
+                    <li>Modificar atributos HTML</li>
                </ul>
           </nav>
      </header>
